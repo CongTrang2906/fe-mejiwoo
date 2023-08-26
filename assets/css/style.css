@@ -57,31 +57,30 @@ html {
 }
 
 /* -------------header-------------- */
-#header {
+
+.header-all {
     height: 106px;
-  }
-  .header-all {
     padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  #nav {
+#nav {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     width: 30%;
   }
-  #nav > li > a {
+#nav > li > a {
     color: #505050;
     text-transform: uppercase;
   }
-  #nav li a {
+#nav li a {
     text-decoration: none;
     line-height: 106px;
     font-size: 14px;
   }
-  .title {
+.title {
     color: #505050;
     font-size: 20px;
     text-align: center;
@@ -89,33 +88,33 @@ html {
     left: 50%;
     transform: translateX(-50%);
   }
-  .search {
+.search {
     display: flex;
     align-items: center;
     color: #505050;
   }
-  .search-btn {
+.search-btn {
     display: flex;
     align-items: center;
     padding: 9px 19px;
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.35);
   }
-  .search-btn > p {
+.search-btn > p {
     font-size: 14px;
   }
-  .icon-search {
+.icon-search {
     padding-left: 98px;
   }
-  .icon-shop {
+.icon-shop {
     padding: 0 26px;
   }
-  .icon-title {
+.icon-title {
     color: #505050;
   }
 
 /* ---------slide------------- */
-#slider {
+.slider {
     position: relative;
     /* tính tỷ lệ  */
     padding-top: 37.22222%;
@@ -161,7 +160,7 @@ html {
 
 /*------ content about section------ */
 
-#season-collections {
+.season-collections {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -211,7 +210,7 @@ html {
 
 /* ---------out best seller section ---------*/
 
-#best-seller {
+.best-seller {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -241,7 +240,7 @@ html {
 
 /* ---------slider-seller--------- */
 
-#slider-seller {
+.slider-seller {
     position: relative;
     padding-top: 37.22222%;
     background: url('../img/slide seller.png') ;
@@ -285,7 +284,7 @@ html {
 }
 /* --------------our-product------------- */
 
-#our-product{
+.our-product{
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -308,13 +307,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 80px; */
     list-style-type: none;
 }
 #nav-our>li>a    {
     color:#505050;
     text-transform: uppercase;
-    padding: 20px 40px;
+    padding: 0; 
+    margin: 0; 
 }
 #nav-our .section-top    {
     border-radius: 10px 10px 0px 0px;
@@ -374,9 +373,18 @@ html {
 .btn-see-more:hover {
     background-color: rgba(217, 217, 217, 0.35);
 }
+@media (min-width: 768px) {
+    #nav-our li {
+        flex: 0;
+        width: 16.66%; /* Chia đều thành 6 phần bằng nhau */
+    }
+    #nav-our>li>a  {
+        padding: 20px 40px;
+    }
+}
 
 /* ----------------said-product---------- */
-#said-product {
+.said-product {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -428,17 +436,6 @@ html {
     text-align: justify;
 }
 /* ------------sign up------------ */
-#signup{
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.content-section-singup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
 .signup-product-all{
     width: 100%;
     background-color: #F7F6F0;
@@ -590,19 +587,7 @@ html {
     margin-right: 10px;
 }
 /* ---------------contact----------- */
-#contact{
-    margin-left: auto;
-    margin-right: auto;
-}
-.content-contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 100px;
-}
-.contact-info-all{
-    width: 100%;
-}
+
 .contact-info-webside{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
