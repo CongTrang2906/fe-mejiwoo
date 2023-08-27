@@ -14,6 +14,7 @@ html {
     
 .slick-initialized .slick-slide {
     margin: 0 12px;
+    height: 675px;
   }
 .slick-arrow {
     position: absolute;
@@ -179,7 +180,7 @@ html {
 .products-list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 23px;
+    gap: 24px;
 }
 .products-img {
     width: 100%;
@@ -383,12 +384,7 @@ html {
     }
 }
 
-/* ----------------said-product---------- */
-.said-product {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}   
+/* ----------------said-product---------- */ 
 .content-section-said {
     padding: 0 0 60px;
     margin: 0 100px;
@@ -400,14 +396,21 @@ html {
     letter-spacing: 4px;
     margin-bottom: 60px;
 }
+.said-product-all{
+    overflow: hidden;
+}
+
 .products-list-said{
+  
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 23px;
+    gap: 24px;
+    
 }
 .user-lisa, 
 .user-celine, 
 .user-tyffany {
+   
     background-color: #F7F6F0;
     padding: 28px 30px;
     border-radius: 10px;
@@ -434,6 +437,7 @@ html {
     margin-top: 6px;
     align-items: center;
     text-align: justify;
+    overflow: hidden;
 }
 /* ------------sign up------------ */
 .signup-product-all{
