@@ -12,10 +12,13 @@ html {
     margin-top: 57px !important;
 }
     
-.slick-initialized .slick-slide {
+.content-section-said .slick-initialized .slick-slide {
     margin: 0 12px;
     height: 675px;
   }
+.product-seller .slick-initialized .slick-slide {
+    margin: 0 12px;
+}
 .slick-arrow {
     position: absolute;
     top: 50%;
@@ -39,6 +42,7 @@ html {
     color: white;
   }
 .slick-prev, .slick-next {
+
     background: none; 
     font-size: 24px;
     line-height: 1;
@@ -217,7 +221,7 @@ html {
     margin-right: auto;
 }
 .product-seller {
-    padding: 60px 0 60px;
+    padding: 0 0 60px 0;
     margin: 0 100px;
 }
 .product-item,
@@ -234,7 +238,7 @@ html {
 }
 .image img {
     width: 100%;
-    height: 100%;
+    height: 496px;
     object-fit: cover;
    
 }
@@ -401,7 +405,6 @@ html {
 }
 
 .products-list-said{
-  
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
