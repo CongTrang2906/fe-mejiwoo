@@ -21,11 +21,11 @@ html {
 }
 .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,10 +39,9 @@ html {
   }
 .slick-arrow:hover {
     cursor: pointer;
-    color: white;
+    color: rgb(184, 178, 178);
   }
 .slick-prev, .slick-next {
-
     background: none; 
     font-size: 24px;
     line-height: 1;
@@ -532,6 +531,10 @@ html {
     margin-left: 12px;
     font-size: 16px;
     font-weight: 400;
+}
+.input-checkbox input{
+    width: 26px;
+    height: 26px;
 }
 .btn-signup-all{
     display: flex;
