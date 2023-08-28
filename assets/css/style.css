@@ -39,7 +39,7 @@ html {
   }
 .slick-arrow:hover {
     cursor: pointer;
-    color: rgb(184, 178, 178);
+    color: rgb(84, 83, 83);
   }
 .slick-prev, .slick-next {
     background: none; 
@@ -74,6 +74,7 @@ html {
     justify-content: space-between;
     list-style-type: none;
     gap: 60px;
+    margin-top: -6px;
   }
 #nav > li > a {
     color: #505050;
@@ -81,16 +82,24 @@ html {
   }
 #nav li a {
     text-decoration: none;
-    line-height: 106px;
     font-size: 14px;
+    font-weight: 400;
   }
 .title {
     color: #505050;
-    font-size: 20px;
     text-align: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 6px;
+  }
+.title .title-product{
+    font-size: 20px;
+    font-weight: 400;
+  }
+.title .title-product-kr{
+    font-size: 14px;
+    font-weight: 400;
   }
 .search {
     display: flex;
@@ -112,7 +121,7 @@ html {
     border: none;
     background: transparent;
 }
-  .search-btn input:focus {
+.search-btn input:focus {
     outline: none;
 }
 .icon-search {
@@ -533,7 +542,6 @@ html {
 .input-checkbox{
     margin-top: 33px;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
