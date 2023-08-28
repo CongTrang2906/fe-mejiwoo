@@ -73,7 +73,7 @@ html {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 30%;
+    gap: 60px;
   }
 #nav > li > a {
     color: #505050;
@@ -96,26 +96,36 @@ html {
     display: flex;
     align-items: center;
     color: #505050;
+    border: none;
   }
 .search-btn {
     display: flex;
     align-items: center;
-    padding: 9px 19px;
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.35);
-  }
-.search-btn > p {
-    font-size: 14px;
-  }
+    overflow: hidden; 
+}
+.search-btn input {
+    width: 113px;
+    flex: 1; 
+    padding: 9px 19px;
+    border: none;
+    background: transparent; rgba(217, 217, 217, 0.35);
+}
+  .search-btn input:focus {
+    outline: none;
+}
 .icon-search {
-    padding-left: 98px;
-  }
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
 .icon-shop {
     padding: 0 26px;
-  }
+}
 .icon-title {
     color: #505050;
-  }
+}
 
 /* ---------slide------------- */
 .slider {
