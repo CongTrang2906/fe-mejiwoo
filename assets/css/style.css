@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
   font-family: Inter, sans-serif;
@@ -17,6 +18,7 @@ html {
 .mt-57 {
   margin-top: 57px !important;
 }
+
 .content-section-said .slick-initialized .slick-slide {
   margin: 0 12px;
   height: 675px;
@@ -320,7 +322,7 @@ html {
   font-weight: 600;
 }
 .section-product {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 #nav-our {
   display: flex;
@@ -328,31 +330,41 @@ html {
   justify-content: center;
   list-style-type: none;
 }
-#nav-our > li > a {
-  color: var(--color-gray-variant);
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-#nav-our .section-top {
+.active {
   border-radius: 10px 10px 0px 0px;
   background-color: var(--color-bg);
-  color: var(--color-black);
-  text-decoration: underline;
+}
+#nav-our li {
+  flex: 0;
+  width: 16.66%;
+  padding: 20px 40px;
+  cursor: pointer;
 }
 #nav-our li a {
-  text-decoration: none;
+  text-transform: uppercase;
   font-size: 32px;
   font-weight: 500;
+  text-decoration: none;
+  color: #505050;
+}
+
+#nav-our .active a {
+  color: var(--color-black);
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.our-product-item {
+  background-color: var(--color-bg);
+  width: 100%;
+  padding: 45px 37px 35px 37px;
+  border-radius: 10px;
 }
 .our-product-all {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 24px;
-  background-color: var(--color-bg);
-  width: 100%;
-  padding: 45px 37px 35px 37px;
-  border-radius: 10px;
 }
 .product-our,
 .price-our {
@@ -391,15 +403,6 @@ html {
 }
 .btn-see-more:hover {
   background-color: var(--color-gray);
-}
-@media (min-width: 768px) {
-  #nav-our li {
-    flex: 0;
-    width: 16.66%;
-  }
-  #nav-our > li > a {
-    padding: 20px 40px;
-  }
 }
 
 /* ----------------said-product---------- */
@@ -674,15 +677,30 @@ html {
 .image-contact {
   display: flex;
   align-items: center;
+  gap: 6px;
+  margin-top: 11px;
 }
-.icon-contact {
-  margin: 10px 10px 0 0;
+.image-contact a {
+  position: relative;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #f7f6f0;
   cursor: pointer;
+}
+.image-contact a:hover {
+  background-color: rgba(217, 217, 217, 0.35);
+}
+.image-contact img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 8px;
+  top: 8px;
 }
 .terms-conditions-privacy {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
   height: 255px;
   gap: 20px;
   font-size: 16px;
